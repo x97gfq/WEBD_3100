@@ -1,0 +1,46 @@
+<!--
+This example includes:
+The @font-face rule to load the “Sans Forgetica” font.
+Basic styling to apply the font to the body text.
+A simple content section with some text to demonstrate the font.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sans Forgetica Example</title>
+    <style>
+        @font-face {
+            font-family: 'Sans Forgetica';
+            src: url('SansForgetica-Regular.otf') format('opentype');
+        }
+        body {
+            font-family: 'Sans Forgetica', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to Sans Forgetica</h1>
+        <p>
+            Sans Forgetica is a font designed using the principles of cognitive psychology to help you better remember your study notes. It was created by a multidisciplinary team of designers and behavioral scientists from RMIT University.
+        </p>
+        <p>
+            The font is back-slanted and has gaps in the letter forms, which are intended to create a desirable difficulty that aids memory retention.
+        </p>
+    </div>
+</body>
+</html>

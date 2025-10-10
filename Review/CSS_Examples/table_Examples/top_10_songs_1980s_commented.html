@@ -1,0 +1,87 @@
+<!--
+  This is a complete HTML document that displays a styled table of the Top 10 Songs from the 1980s.
+  It includes embedded CSS for styling and uses semantic HTML elements for structure.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 10 Songs from the 1980s</title>
+        <!-- The <head> section contains metadata and links to stylesheets or scripts.
+        In this case, we use an embedded style sheet
+        (style tag to define CSS directly in the HTML file.)
+
+        Embedded CSS starts here. This is used to style the HTML elements on the page. -->
+      <style>
+        /* The body selector styles the entire page background and font */
+        /* The table selector styles the appearance of the table */
+        /* The th and td selectors style the table headers and cells */
+        /* The tr:nth-child(even) selector adds zebra striping to alternate rows */
+        /* The tr:hover selector adds a hover effect for better readability */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+  <!-- The <body> section contains all the visible content of the web page. -->
+
+      <!-- The <h1> tag defines the main heading of the page. -->
+  <h1>Top 10 Songs from the 1980s</h1>
+      <!-- The <table> tag defines a table to display data in rows and columns. -->
+  <table>
+    <!-- The <thead> section contains the header row of the table. -->
+    <!-- The <tbody> section contains the actual data rows. -->
+
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Billie Jean</td><td>Michael Jackson</td><td>1983</td></tr>
+            <tr><td>2</td><td>Like a Virgin</td><td>Madonna</td><td>1984</td></tr>
+            <tr><td>3</td><td>Sweet Child o' Mine</td><td>Guns N' Roses</td><td>1987</td></tr>
+            <tr><td>4</td><td>Livin' on a Prayer</td><td>Bon Jovi</td><td>1986</td></tr>
+            <tr><td>5</td><td>Every Breath You Take</td><td>The Police</td><td>1983</td></tr>
+            <tr><td>6</td><td>Girls Just Want to Have Fun</td><td>Cyndi Lauper</td><td>1983</td></tr>
+            <tr><td>7</td><td>Take On Me</td><td>a-ha</td><td>1985</td></tr>
+            <tr><td>8</td><td>With or Without You</td><td>U2</td><td>1987</td></tr>
+            <tr><td>9</td><td>Wake Me Up Before You Go-Go</td><td>Wham!</td><td>1984</td></tr>
+            <tr><td>10</td><td>Eye of the Tiger</td><td>Survivor</td><td>1982</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

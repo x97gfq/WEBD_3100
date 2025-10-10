@@ -1,0 +1,63 @@
+<!--
+This example includes:
+A navigation bar with links.
+A notification to display important messages.
+Various buttons with different styles.
+A card component to display content in a structured manner.
+A footer with some text.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">Brand</a>
+            <div>
+                <a href="#" class="text-gray-700 hover:text-gray-900 mx-2">Home</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 mx-2">About</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 mx-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-8">
+        <!-- Notification -->
+        <div class="bg-blue-500 text-white text-center py-4">
+            <p>This is a primary notification.</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="mt-4 flex justify-center space-x-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">Primary</button>
+            <button class="bg-green-500 text-white px-4 py-2 rounded">Success</button>
+            <button class="bg-red-500 text-white px-4 py-2 rounded">Danger</button>
+        </div>
+
+        <!-- Card -->
+        <div class="mt-8 max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="px-6 py-4">
+                <h2 class="text-xl font-bold mb-2">Card Title</h2>
+                <p class="text-gray-700">This is a simple card example using Tailwind CSS.</p>
+            </div>
+            <div class="px-6 py-4 bg-gray-100">
+                <a href="#" class="text-blue-500 hover:underline">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow mt-8">
+        <div class="container mx-auto px-4 py-4 text-center">
+            <p class="text-gray-700">© 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
