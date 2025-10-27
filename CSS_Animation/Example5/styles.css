@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 50px solid yellow;
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.bouncing-ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    animation: bounce-diagonal 4s infinite linear;
+}
+
+.falling-ball {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    animation: fall 3s infinite linear;
+}
+
+@keyframes bounce-diagonal {
+    0% {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 50px);
+        transform: translate(0, 0);
+    }
+    50% {
+        top: calc(100% - 50px);
+        left: calc(100% - 50px);
+        transform: translate(0, 0);
+    }
+    75% {
+        top: calc(100% - 50px);
+        left: 0;
+        transform: translate(0, 0);
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fall {
+    0% {
+        top: -30px;
+        left: calc(100% * var(--random-x));
+    }
+    100% {
+        top: calc(100% - 30px);
+        left: calc(100% * var(--random-x));
+    }
+}
