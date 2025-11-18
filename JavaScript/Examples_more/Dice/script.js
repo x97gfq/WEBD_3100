@@ -16,9 +16,9 @@ function rollDice() {
   document.getElementById('dice2').textContent = `Dice 2: ${die2}`;
 
   // Check if the dice match and display a message
-  const message = (die1 === die2)
+  const message = ((die1 === die2)
     ? "🎉 It's a match!"
-    : "❌ No match. Try again!";
+    : "❌ No match. Try again!");
 
   document.getElementById('message').textContent = message;
 }

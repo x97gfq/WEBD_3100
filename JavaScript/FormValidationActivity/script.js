@@ -1,0 +1,6 @@
+
+
+alert("JavaScript loaded.")
+
+
+
